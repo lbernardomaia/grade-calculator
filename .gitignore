@@ -1,0 +1,5 @@
+.idea/
+grade-calculator.iml
+
+# Project exclude paths
+/target/

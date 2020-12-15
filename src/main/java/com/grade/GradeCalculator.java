@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class GradeCalculator {
 
-    public String compute(int quantityOfQuestions, int quantityOfrightQuestions){
+    public String compute(int quantityOfQuestions, int quantityOfRightQuestions){
 
         if (quantityOfQuestions <= 0 ||
-                quantityOfQuestions < quantityOfrightQuestions){
+                quantityOfQuestions < quantityOfRightQuestions){
             return "";
         }
 
-        int score = (quantityOfrightQuestions * 100) / quantityOfQuestions;
+        int score = (quantityOfRightQuestions * 100) / quantityOfQuestions;
 
         return Arrays.stream(GradeLetterEnum.values())
                 .filter(grade -> grade.isScoreMatch(score))

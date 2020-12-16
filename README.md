@@ -1,6 +1,6 @@
-# grade-calculator
+# Grade Calculator
 
-The library aim to inform a grade based on a score computed from two parameters. 
+The project aim to inform a grade based on a score computed from two parameters. 
 
 ***Grades***
 
@@ -16,4 +16,23 @@ F | score <= 49
 
 ```
 gradeCalculator.compute(quantityOfQuestions, quantityOfRightQuestions);
+```
+
+**Maven Dependency Import**
+
+```
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+````
+
+```
+  <dependency>
+    <groupId>com.github.lbernardomaia</groupId>
+    <artifactId>grade-calculator</artifactId>
+    <version>67ad26aec1</version>
+  </dependency>
 ```
